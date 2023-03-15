@@ -19,6 +19,7 @@ app.get("/", (req, res) =>
 );
 
 // GET route for notes.html -- serves static html file
+// localhost:3001/notes
 app.get("/notes", (req, res) =>
   res.sendFile(path.join(__dirname, "/public/notes.html"))
 );
